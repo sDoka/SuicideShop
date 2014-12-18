@@ -50,7 +50,7 @@ namespace UseSql
                 dataAdapter.InsertCommand.ExecuteNonQuery();
                 MessageBox.Show("Наименование добавлено");
             }
-            catch (Exception ex)
+            catch //(Exception ex)
             {
                // MessageBox.Show(ex.ToString());
                 MessageBox.Show("Возникли неполадки, возможно вы заполнили не все поля");

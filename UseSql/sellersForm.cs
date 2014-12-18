@@ -57,7 +57,7 @@ namespace UseSql
                 dgw1.Update();
 
             }
-            catch (Exception ex)
+            catch //(Exception ex)
             {
                 MessageBox.Show("..!.");
             }           
@@ -107,6 +107,13 @@ namespace UseSql
         private void cb1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            addSeller add_seller = new addSeller();
+            add_seller.Show();
         }
     
     

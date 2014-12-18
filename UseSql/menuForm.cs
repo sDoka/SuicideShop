@@ -32,14 +32,22 @@ namespace UseSql
 
         private void menuForm_Load(object sender, EventArgs e)
         {
-            DataSet ds = new DataSet();
-            SqlConnection dataBaseConnection = new SqlConnection(connect);
-            SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT   Shop.Наименование, Sellers.Поставщик, Shop.Тип "
-                +" FROM Sellers INNER JOIN Shop ON Sellers.ID = Shop.ID_Поставщик ", dataBaseConnection);
-            //Вторым параметром ты присваиваешь имя для текущей таблицы в датасете
-            dataAdapter.Fill(ds, "Shop");
-            //Здесь указываешь имя нужной таблицы            
-            dataGridView1.DataSource = ds.Tables["Shop"]; 
+            try
+            {
+                DataSet ds = new DataSet();
+                SqlConnection dataBaseConnection = new SqlConnection(connect);
+                SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT   Shop.Наименование, Sellers.Поставщик, Shop.Тип "
+                    + " FROM Sellers INNER JOIN Shop ON Sellers.ID = Shop.ID_Поставщик ", dataBaseConnection);
+                //Вторым параметром ты присваиваешь имя для текущей таблицы в датасете
+                dataAdapter.Fill(ds, "Shop");
+                //Здесь указываешь имя нужной таблицы            
+                dataGridView1.DataSource = ds.Tables["Shop"];
+            }
+
+            catch
+            {
+                MessageBox.Show("Упс, кажется нет подключения к базе =((");
+            }
 
         }
 
@@ -49,8 +57,6 @@ namespace UseSql
             main.Show();
         }
 
-        private void menuForm_Leave(object sender, EventArgs e)//////////////////////////ненужное
-        {
-        }
+
     }
 }

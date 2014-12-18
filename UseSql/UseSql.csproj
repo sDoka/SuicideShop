@@ -62,12 +62,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapter.cs" />
     <Compile Include="addItem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="addItem.Designer.cs">
       <DependentUpon>addItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addSeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSeller.Designer.cs">
+      <DependentUpon>addSeller.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminPanel.cs">
       <SubType>Form</SubType>
@@ -107,13 +112,17 @@
     <Compile Include="sellersForm.Designer.cs">
       <DependentUpon>sellersForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SuicideShopDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SuicideShopDataSet2.xsd</DependentUpon>
+    <Compile Include="soldItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="soldItems.Designer.cs">
+      <DependentUpon>soldItems.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="addItem.resx">
       <DependentUpon>addItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSeller.resx">
+      <DependentUpon>addSeller.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
@@ -143,6 +152,9 @@
     <EmbeddedResource Include="sellersForm.resx">
       <DependentUpon>sellersForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="soldItems.resx">
+      <DependentUpon>soldItems.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\DataSources\AddItem.datasource" />
     <None Include="Properties\DataSources\Form1.datasource" />
     <None Include="Properties\DataSources\menuForm.datasource" />
@@ -160,17 +172,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="SuicideShopDataSet2.xsc">
-      <DependentUpon>SuicideShopDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="SuicideShopDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SuicideShopDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SuicideShopDataSet2.xss">
-      <DependentUpon>SuicideShopDataSet2.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -179,13 +180,6 @@
     <None Include="Resources\магаз самоубийств.png" />
     <None Include="Resources\7574.jpg" />
     <Content Include="jack.ico" />
-    <Content Include="SuicideShop.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SuicideShop_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>SuicideShop.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\27f427942f0d475bb69d17491923.jpg" />
   </ItemGroup>
   <ItemGroup>

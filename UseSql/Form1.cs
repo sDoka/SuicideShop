@@ -28,7 +28,7 @@ namespace UseSql
             {
                 Application.Exit();
             }
-            catch (Exception ex)
+            catch //(Exception ex)
             {
                 Application.ExitThread();
             }

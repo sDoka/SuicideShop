@@ -78,7 +78,6 @@
             this.Text = "Ассортимент";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.menuForm_FormClosing);
             this.Load += new System.EventHandler(this.menuForm_Load);
-            this.Leave += new System.EventHandler(this.menuForm_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
