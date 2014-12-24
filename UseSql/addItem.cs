@@ -18,6 +18,7 @@ namespace UseSql
        SqlConnection dataBaseConnection = new SqlConnection(connect);
        DataSet ds1 = new DataSet();
        DataSet ds2 = new DataSet();
+
         public addItem()
         {
             InitializeComponent();
@@ -60,12 +61,12 @@ namespace UseSql
 
         private void addItem_Load(object sender, EventArgs e)
         {
-
+            toolTip1.SetToolTip(cb1, "В списке доступны только незаблокированные поставщики.");
            
             // забиваем комбобокс из датасета
            
             SqlConnection dataBaseConnection = new SqlConnection(connect);
-            SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM SuicideShop.dbo.Sellers", dataBaseConnection);
+            SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM SuicideShop.dbo.Sellers Where blackList = '0'", dataBaseConnection);
 
             dataAdapter.Fill(ds1, "Sellers");
 

@@ -177,6 +177,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\75741.jpg" />
+    <None Include="Resources\388_big-1600x1200.jpg" />
     <None Include="Resources\магаз самоубийств.png" />
     <None Include="Resources\7574.jpg" />
     <Content Include="jack.ico" />

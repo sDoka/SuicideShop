@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addItem));
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
@@ -37,6 +38,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.cb1 = new System.Windows.Forms.ComboBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // linkLabel1
@@ -127,6 +129,10 @@
             this.cb1.Size = new System.Drawing.Size(121, 21);
             this.cb1.TabIndex = 12;
             // 
+            // toolTip1
+            // 
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            // 
             // addItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,7 +151,7 @@
             this.MinimizeBox = false;
             this.Name = "addItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddItem";
+            this.Text = "Добавление товара";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.addItem_FormClosing);
             this.Load += new System.EventHandler(this.addItem_Load);
             this.ResumeLayout(false);
@@ -163,5 +169,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox cb1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

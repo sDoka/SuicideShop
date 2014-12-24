@@ -73,9 +73,29 @@ namespace UseSql.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _388_big_1600x1200 {
+            get {
+                object obj = ResourceManager.GetObject("388_big-1600x1200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _7574 {
             get {
                 object obj = ResourceManager.GetObject("7574", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _75741 {
+            get {
+                object obj = ResourceManager.GetObject("75741", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
